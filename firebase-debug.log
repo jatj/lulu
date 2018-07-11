@@ -1,0 +1,38 @@
+[debug] [2018-07-11T02:33:10.251Z] ----------------------------------------------------------------------
+[debug] [2018-07-11T02:33:10.254Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-07-11T02:33:10.254Z] CLI Version:   3.17.4
+[debug] [2018-07-11T02:33:10.254Z] Platform:      darwin
+[debug] [2018-07-11T02:33:10.254Z] Node Version:  v8.9.4
+[debug] [2018-07-11T02:33:10.254Z] Time:          Tue Jul 10 2018 21:33:10 GMT-0500 (CDT)
+[debug] [2018-07-11T02:33:10.254Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-07-11T02:33:10.271Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-07-11T02:33:10.271Z] > authorizing via signed-in user
+[debug] [2018-07-11T02:33:10.273Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/lulu-c5445  
+  
+ Tue Jul 10 2018 21:33:10 GMT-0500 (CDT)
+[debug] [2018-07-11T02:33:10.593Z] <<< HTTP RESPONSE 200
+[debug] [2018-07-11T02:33:10.593Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/lulu-c5445/tokens  
+  
+ Tue Jul 10 2018 21:33:10 GMT-0500 (CDT)
+[debug] [2018-07-11T02:33:11.077Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'lulu-c5445'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-07-11T02:33:11.362Z] >>> HTTP REQUEST PUT https://lulu-c5445.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+ 
+ Tue Jul 10 2018 21:33:11 GMT-0500 (CDT)
+[debug] [2018-07-11T02:33:11.613Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database lulu-c5445 is valid
+[info] i  hosting: preparing . directory for upload...
+[debug] [2018-07-11T02:33:20.612Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/lulu-c5445/uploads/-LH6ArHTzqaO8MX0yFK3?fileCount=2591&message=  
+  
+ Tue Jul 10 2018 21:33:20 GMT-0500 (CDT)

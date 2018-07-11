@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lulú Dessert Boutique</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- VENDOR STYLES
+    ============================================= -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+    <!-- Revolution Slider -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/rs-plugin/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/rs-plugin/css/navigation.css">
+    <!-- Maginific popup -->
+    <link rel="stylesheet" type="text/css" href="assets/vendor/Magnific-Popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CUSTOM STYLES 
+    ============================================= -->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="assets/images/animacion_3k.gif" alt="">
+    </div>
+    <!-- CONTENT
+    ============================================= -->
+    <div class="wrapper" style="opacity: none; display: none;">
+        <!-- HEADER
+        ============================================= -->
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img class="large-logo" src="assets/images/logo2.png" width="100%" height="auto" alt="Heavenly Hideaways Logo">
+                    </a>
+                </div>
+                <!--/.navbar-header -->
+            </div>
+            <!--/.container -->
+            <div class="container-fluid">
+                <div id="mainNavbar" class="navbar-collapse collapse in" aria-expanded="true" style="">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="contactos.html">Contactos </a>
+                        
+                        </li>
+                        <li>
+                            <a id="cerrarSesion" href="#cerrar">Cerrar Sesión </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container -->
+        </nav>
+
+        <section id="contactos" class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="heading">Contactos</h1>
+                </div>
+                <div class="col-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Teléfono</th>
+                                <th scope="col">Comentario</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- VENDOR SCRIPTS 
+    ============================================= -->
+    <!-- Basic  -->
+    <script src="assets/vendor/jquery-3.2.1.min.js"></script>
+    <script src="assets/vendor/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- SweetAlert -->
+    <script src="assets/vendor/sweetalert.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyBfZxITpj-Lq7M-tVVJUJRBZrVftKqECMs",
+            authDomain: "lulu-c5445.firebaseapp.com",
+            databaseURL: "https://lulu-c5445.firebaseio.com",
+            projectId: "lulu-c5445",
+            storageBucket: "lulu-c5445.appspot.com",
+            messagingSenderId: "420079508902"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <!-- CUSTOM SCRIPTS
+    ============================================= -->
+    <script src="assets/js/contactos.js"></script>
+</body>
+
+</html>
