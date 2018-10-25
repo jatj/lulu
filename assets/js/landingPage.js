@@ -125,7 +125,7 @@ $(document).ready(function(){
             offset: '85%'
         });
 
-        var waypointProductos = new Waypoint({
+        var waypointContacto = new Waypoint({
             element: document.getElementById('contacto'),
             handler: function (dir) {
                 $("#contacto").addClass("shown");
@@ -190,6 +190,7 @@ $(document).ready(function(){
         }
         return data;
     }
+    
     setTimeout(() => {
         $("#preloader").fadeOut();
         $(".wrapper").css("display", "block");
